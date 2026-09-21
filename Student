@@ -1,0 +1,28 @@
+class Student{
+    String name;
+    int age;
+    int rollNo;
+    String department;
+    void study(){
+        System.out.println(name+ " is studying");
+    }
+    void exam(){
+        System.out.println(name+ " is writing the exam");
+    }
+}
+public class Main{
+    public static void main(String[] args){
+        Student student=new Student();
+        student.name="Sri";
+        student.age=20;
+        student.rollNo=54;
+        student.department = "Information Technology";
+        System.out.println("Student Information");
+        System.out.println("Name:"+student.name);
+        System.out.println("Age:"+ student.age);
+        System.out.println("Roll No:"+student.rollNo);
+        System.out.println("Department:"+student.department);
+        student.study();
+        student.exam();
+    }
+}
